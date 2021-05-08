@@ -1,16 +1,16 @@
-# prueba_ant_pack
+# Prueba AntPack
 
-A new Flutter project.
+Prueba desarrollada con Flutter y BLoc
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Instalación
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter get packages
+```
+## Usabilidad
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Para ver mas a detalle cada usuario esta disponible la opcion de onTap
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Desarrollado por
+Alejandro Muñoz

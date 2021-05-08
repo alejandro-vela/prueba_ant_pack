@@ -12,10 +12,18 @@ class MainBloc extends Bloc<MainEvent, MainState> {
     if (event is AppStarted) {
       yield* _mapAppStartedToState();
     }
+    if (event is ShowDataEvent) {
+      yield* _mapAppStartedToState();
+    }
   }
 
   Stream<MainState> _mapAppStartedToState() async* {
-    List<Users> users = await interactor.getUsers();
-    yield ShowData(users: users);
+    try {
+      List<Users> users = await interactor.getUsers();
+      yield ShowData(users: users);
+    } catch (err) {
+      yield Uninitialized();
+      print(err.runTimeType);
+    }
   }
 }

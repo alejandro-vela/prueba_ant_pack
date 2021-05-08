@@ -19,5 +19,5 @@ class ShowData extends MainState {
 
   ShowData({@required this.users});
   @override
-  String toString() => 'No Autenticado';
+  String toString() => 'Inicializado';
 }

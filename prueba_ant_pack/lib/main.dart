@@ -26,11 +26,8 @@ class App extends StatelessWidget {
       home: BlocBuilder<MainBloc, MainState>(builder: (context, state) {
         if (state is Uninitialized) {
           return Scaffold(
-            appBar: AppBar(
-              title: Text("xd"),
-            ),
             body: Center(
-              child: CircularProgressIndicator(),
+              child: Image.asset("images/progress.gif"),
             ),
           );
         }
@@ -39,7 +36,9 @@ class App extends StatelessWidget {
             users: state.users,
           );
         }
-        return Container();
+        return Center(
+          child: CircularProgressIndicator(),
+        );
       }),
     );
   }
